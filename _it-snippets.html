@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="article.css">
+	<link rel="shortcut icon" href="images/page-logo.png" type="image/x-icon">
+	<title>Сниппеты в VS Code</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<a href="index.html">/ MZ Blog</a>
+		</header>
+		<main>
+			<img src="images/_it-snippets.png" alt="">
+			<h1>Сниппеты в VS Code</h1>
+			<h2>Как создать сниппет?</h2>
+			<p>Открываем Файл - <b>Настройки</b> - <b>Настроить пользовательские фрагменты кода</b>. Открывается меню, где
+				выше разделительной черты показывается список уже имеющихся пользовательских сниппетов. Чтобы
+				создать новый нужно выбрать пункт - <b>Настроить файл с глобальным фрагментом кода</b>, после его в
+				появившейся строке написать название будущего сниппета (название файла в котором будет хранится
+				код).</p>
+			<p>Откроется файл, в ктором уже есть базовая структура сниппета.</p>
+			<img src="images/_it-snippets/base-code.png" alt="">
+			<p>Нам нужно раскомментировать (выделяем текст и нажимаем CTRL + /) все строки после <b>Example:</b>
+			<ul>
+				<li><b>"Print to console":</b> - название сниппета, которе будет показываться во всплывающей подсказке
+				</li>
+				<li><b>"scope": "javascript,typescript"</b> - языки программирования, в которых можно использовать
+					сниппет</li>
+				<li><b>"prefix": "log"</b> - сокращение, по которому можно развернуть сниппет</li>
+				<li><b>"body": []</b> - массив, в котором будет код, который развернёт сниппет</li>
+				<li><b>"description":</b> - описание</li>
+			</ul>
+			</p>
+			<h2>Как писать код сниппета?</h2>
+			<h3>Синтаксис</h3>
+			<ul>
+				<li>Каждая строка (открывающий и закрывающий тег) должна заключаться в кавычки <b>""</b></li>
+				<li>После каждой строки должна ставиться <b>запятая</b> (так как это массив)</li>
+				<li>Все кавычки, кроме тех, в которые заключается строка, должны записываться в виде: <b>/"</b></li>
+				<li>Чтобы добавить табуляцию к строкам, нужно перед тегом добавить: <b>/t</b></li>
+			</ul>
+			<img src="images/_it-snippets/example-code.png" alt="">
+	</div>
+	</main>
+	<footer class="footer">
+		<p>&#169 Meha Zylu 2022</p>
+	</footer>
+	</div>
+</body>
+
+</html>
