@@ -1,107 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .container {
-	max-width: 960px;
-	min-height: 100vh;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
+  max-width: 960px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-	height: 80px;
-	margin: 20px 0 10px 0;
-	font-size: 60px;
-	font-weight: 900;
+  height: 80px;
+  margin: 20px 0 10px 0;
+  font-size: 60px;
+  font-weight: 900;
 }
 
 main {
-	flex: 1 1 auto;
-	margin-bottom: 80px;
+  flex: 1 1 auto;
+  margin-bottom: 80px;
 }
 
 .filter-menu {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .filter-menu__list {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.filter-menu__item {
-	padding: 10px 40px;
-	font-size: 18px;
+.filter-menu__item,
+.filter-submenu__item {
+  font-size: 18px;
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.games-submenu,
+.it-submenu {
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .article-cards {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .card {
-	background-color: #e8e8e8;
-	border-radius: 10px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
 }
 
 .card__container {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__image img {
-	border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .card__title {
-	padding: 10px 20px 10px 20px;
-	flex: 1 1 auto;
+  padding: 10px 20px 10px 20px;
+  flex: 1 1 auto;
 }
 
 .card__category {
-	padding: 20px;
-	flex: 0 0 auto;
+  padding: 20px;
+  flex: 0 0 auto;
 }
 
 .category {
-	display: inline-block;
-	margin-right: 15px;
-	padding: 10px;
-	font-size: 16px;
-	border: 1px solid;
-	border-radius: 5px;
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 .footer {
-	padding: 20px;
-	font-size: 16px;
-	font-weight: 400;
-	text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .hide {
-	display: none;
+  display: none;
+}
+
+.flex {
+  display: flex;
 }
